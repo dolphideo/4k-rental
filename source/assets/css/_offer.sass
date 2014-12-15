@@ -1,0 +1,43 @@
+#offer
+  background-color: $white
+  ul.items
+    @extend .row
+    @extend .center-block
+    width: 80%
+    padding: 0
+    > li
+      @extend .center-block
+      text-align: center
+      display: inline-block
+      position: relative
+      padding-bottom: 50px
+    > li:nth-of-type(1)
+      @extend .col-sm-4
+      div:first-of-type
+        background: image-url('temp_camera.jpg') 50% 50% no-repeat
+        background-size: contain
+    > li:nth-of-type(2)
+      @extend .col-sm-4
+      div:first-of-type
+        background: image-url('temp_lightning.jpg') 50% 50% no-repeat
+        background-size: contain
+    > li:nth-of-type(3)
+      @extend .col-sm-4
+      div:first-of-type
+        background: image-url('temp_slider.jpg') 50% 50% no-repeat
+        background-size: contain
+    div:first-of-type
+      height: 150px
+      background-repeat: no-repeat
+      // border: 1px solid $test
+    div.price
+      position: absolute
+      bottom: 0
+      width: 90%
+      background-color: $test
+
+  ul ul
+    padding-left: 20px
+  > div
+    @extend .center-block
+    width: 80%

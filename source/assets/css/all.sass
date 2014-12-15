@@ -1,0 +1,39 @@
+@charset 'utf-8'
+
+@import 'settings'
+@import 'imports'
+@import 'vendor_fixes'
+
+body
+  background: $backgroundColor
+  color: $textColor
+  font-family: $font-family-base
+
+h1, h2, h3, h4, h5, h6
+  font-family: $font-family-base
+  font-weight: $light
+  font-style: normal
+
+.background
+  color: $white
+
+.blue
+  color: $blue
+
+section
+  @extend .container-fluid
+  h1
+    @extend .center-block
+    text-transform: uppercase
+    font-size: 2.2em
+    max-width: 90%
+    margin-top: 30px
+    text-align: center
+    padding-bottom: 8px
+
+#flow, #clients
+  li
+    display: block
+
+#cboxClose
+  display: none

@@ -1,0 +1,80 @@
+#contact
+  color: $white
+  background: image-url('background-contact.jpg') 50% 50% no-repeat
+  background-size: cover
+  .bcg
+    background-position: 100% 100%
+    background-repeat: no-repeat
+    background-attachment: fixed
+    background-size: cover
+    height: 100%
+    margin-left: -15px
+    margin-right: -15px
+    background-image: image-url('background-contact.jpg')
+    background-color: $black
+    padding-top: 30px
+    padding-bottom: 30px
+
+  h1
+    margin-top: 0
+    color: $white
+    border-bottom: 1px solid $white
+    width: 80%
+    margin-bottom: 5%
+  ul
+    @extend .row
+    @extend .center-block
+    font-family: 'Segoe Print'
+    padding: 30px 30px
+    width: 80%
+    background-color: rgba(0, 0, 0, 0.7)
+    margin-bottom: 5%
+    a
+      color: $white
+      &:hover
+        color: $blue
+        text-decoration: none
+
+    li:nth-of-type(1)
+      @extend .col-sm-3
+      div
+        background: image-url('contact.png') 50% 50% no-repeat
+        background-size: contain
+        height: 120px
+        width: 150px
+    li:nth-of-type(2)
+      @extend .col-sm-6
+      div
+        display: inline-block
+        vertical-align: top
+      div:first-of-type
+        background: image-url('phone.png') 50% 50% no-repeat
+        background-size: contain
+        height: 120px
+        width: 150px
+      div:nth-of-type(2)
+        text-align: right
+        p:first-of-type
+          margin-top: 23px
+      p
+        color: $blue
+        margin: 0
+        &:first-of-type
+          margin-top: 10px
+    li:nth-of-type(3)
+      @extend .col-sm-3
+      div
+        background: image-url('facebook.png') 50% 50% no-repeat
+        background-size: contain
+        height: 120px
+        width: 150px
+
+  li
+    @extend .center-block
+    text-align: center
+    display: block
+    div
+      @extend .center-block
+    p
+      margin-top: 1em
+      margin-bottom: 0px
