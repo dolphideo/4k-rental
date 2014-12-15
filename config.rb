@@ -20,8 +20,6 @@ Time.zone = "Warsaw"
 # Page options, layouts, aliases and proxies
 ###
 
-page "blog/*", :layout => :blog_layout
-
 # Per-page layout changes:
 #
 # With no layout
